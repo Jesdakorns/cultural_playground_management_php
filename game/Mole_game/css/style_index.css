@@ -1,0 +1,1196 @@
+
+@import url("https://fonts.googleapis.com/css?family=Itim&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+
+body,
+html {
+  background: url("../img/bg1.png") no-repeat center center fixed;
+  background-size: contain;
+  width: 100%;
+  height: 925px;
+  background-color: rgb(128, 189, 255);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box {
+  width: 840px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .box .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.container .box .title .block {
+  width: 0%;
+  height: 200px;
+  /* background: #1080ff; */
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
+}
+.container .box .title h1 {
+  font-family: "Itim", cursive;
+  color: #000000;
+  font-size: 120px;
+  -webkit-animation: mainFadeIn 2s forwards;
+  -o-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  text-shadow: 4px 0px 0px #ffffff;
+}
+.container .box .title h1 span {
+  width: 0px;
+  height: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #1093ff;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 13px;
+  right: -12px;
+}
+.container .box .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 65px;
+  margin-bottom: 200px;
+}
+.container .box .role .block {
+  width: 0%;
+  height: inherit;
+  background: #e91e63;
+  position: absolute;
+  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 2s;
+  display: flex;
+}
+.container .box .role p {
+  animation: secFadeIn 2s forwards;
+  animation-delay: 3.2s;
+  opacity: 0;
+  font-weight: 400;
+  font-family: "Itim", cursive;
+  color: #000000;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: #e9d856;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+  50% {
+    width: 10px;
+    height: 10px;
+    background: #e9d856;
+    opacity: 1;
+    bottom: 45px;
+  }
+  65% {
+    width: 7px;
+    height: 7px;
+    bottom: 0px;
+    width: 15px;
+  }
+  80% {
+    width: 10px;
+    height: 10px;
+    bottom: 20px;
+  }
+  100% {
+    width: 7px;
+    height: 7px;
+    background: #e9d856;
+    border: 0px solid #222;
+    bottom: 13px;
+  }
+}
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+footer {
+  width: 350px;
+  height: 80px;
+  background: #ffb510;
+  position: absolute;
+  right: 0;
+  bottom: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: top 0.8s forwards;
+  animation-delay: 4s;
+}
+footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #232323;
+  font-family: "Itim", cursive;
+}
+footer span i {
+  margin-right: 25px;
+  font-size: 22px;
+  color: #232323;
+  animation: icon 2s forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+@keyframes icon {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+.btn-start {
+  width: 147%;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 58px;
+  border-radius: 35px;
+
+  box-shadow: 5px 5px 2px #ffffff;
+  border: 1px solid #ffffff;
+}
+
+@media screen and (min-width: 300px) and (orientation: landscape) {
+  body,
+  html {
+    /*        background-color: rgb(179, 255, 0);*/
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_6.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 47px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  .container .box {
+    width: 357px;
+    transform: rotate(8deg);
+    margin: 20px 65px 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 51px;
+  }
+  .container .box .title .block {
+    height: 80px;
+  }
+  .container .box .role {
+    height: 20px;
+    margin-top: 18px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  body,
+  html {
+    /*        background-color: rgb(0, 183, 255);*/
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_6.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    margin-bottom: -111px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 504px;
+    transform: rotate(8deg);
+    margin: 20px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 72px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  body,
+  html {
+    /*    background-color: rgb(0, 183, 255);*/
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_X.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 51px;
+    margin-bottom: -123px;
+    margin-left: -25px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 504px;
+    transform: rotate(8deg);
+    margin: 20px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 72px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 900px) and (orientation: landscape) {
+  body,
+  html {
+    /* background-color: lightgreen; */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPad_pro.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+    margin-bottom: -538px;
+    margin-left: -44px;
+  }
+
+  .container .box {
+    width: 665px;
+    transform: rotate(8deg);
+    margin: 685px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 95px;
+  }
+  .container .box .title .block {
+    height: 170px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 230px;
+  }
+  .container .box .role p {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (orientation: landscape) {
+  html {
+    /* background-color: rgb(197, 96, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 131px;
+    margin-bottom: -534px;
+    margin-left: -44px;
+  }
+  .bg {
+    background: url("../img/bg1.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 925px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 48px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 700px;
+    transform: rotate(8deg);
+    margin: 685px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 100px;
+  }
+  .container .box .title .block {
+    height: 170px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 43px;
+    margin-bottom: 148px;
+  }
+  .container .box .role p {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  body,
+  html {
+    /* background-color: rgb(197, 96, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/bg1.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 925px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+    margin-bottom: -290px;
+    margin-left: -44px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 48px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .box {
+    width: 805px;
+    transform: rotate(8deg);
+    margin: 685px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 115px;
+  }
+  .container .box .title .block {
+    height: 170px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 170px;
+  }
+  .container .box .role p {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+  body,
+  html {
+    /* background-color: rgb(197, 1, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPad_pro.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+    margin-bottom: -290px;
+    margin-left: -44px;
+  }
+  .container .box {
+    width: 840px;
+    transform: rotate(8deg);
+    margin: 781px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 120px;
+  }
+  .container .box .title .block {
+    height: 170px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 57px;
+    margin-bottom: 275px;
+  }
+  .container .box .role p {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 1400px) and (orientation: landscape) {
+  body,
+  html {
+    /* background-color: rgb(197, 1, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/bg1.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 149px;
+    margin-bottom: -290px;
+    margin-left: -44px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 60px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 840px;
+    transform: rotate(8deg);
+    margin: 753px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 120px;
+  }
+  .container .box .title .block {
+    height: 200px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 57px;
+    margin-bottom: 275px;
+  }
+  .container .box .role p {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 2100px) and (orientation: landscape) {
+  .container{
+    max-width: 2190px;
+  }
+  body,
+  html {
+    /* background-color: rgb(197, 1, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/bg1.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1990px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 257px;
+    margin-bottom: -290px;
+    margin-left: -44px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 98px;
+    border-radius: 44px;
+    box-shadow: 8px 8px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 1710px;
+    transform: rotate(8deg);
+    margin: 830px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 241px;
+  }
+  .container .box .title .block {
+    height: 200px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 57px;
+    margin-bottom: 275px;
+  }
+  .container .box .role p {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 3000px) and (orientation: landscape) {
+  .container{
+    max-width: 2449px;
+  }
+  body,
+  html {
+    /* background-color: rgb(197, 1, 1); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/bg1.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1990px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 317px;
+    margin-bottom: -290px;
+    margin-left: -44px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 108px;
+    border-radius: 44px;
+    box-shadow: 8px 8px 2px #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .container .box {
+    width: 1910px;
+    transform: rotate(8deg);
+    margin: 830px auto 0 0;
+  }
+  .container .box .title h1 {
+    font-size: 261px;
+  }
+  .container .box .title .block {
+    height: 200px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 57px;
+    margin-bottom: 275px;
+  }
+  .container .box .role p {
+    font-size: 46px;
+  }
+}
+
+
+@media screen and (min-width: 300px) and (orientation: portrait) {
+  body,
+  html {
+           /* background-color: rgb(179, 255, 0); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_6_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 548px;
+  }
+
+  .container .box {
+    width: 357px;
+    transform: rotate(-15deg);
+    margin: 0 0 399px 0;
+  }
+  .container .box .title h1 {
+    font-size: 51px;
+  }
+  .container .box .title .block {
+    height: 80px;
+  }
+  .container .box .role {
+    height: 20px;
+    margin-top: 18px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) and (orientation: portrait) {
+  body,
+  html {
+           /* background-color: rgb(0, 183, 255); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_6_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 669px;
+  }
+
+  .container .box {
+    width: 504px;
+    transform: rotate(-15deg);
+    margin: 0 0 468px 0;
+  }
+  .container .box .title h1 {
+    font-size: 64px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 340px) and (min-height: 740px) and (orientation: portrait) {
+  body,
+  html {
+           background-color: rgb(255, 17, 0);
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_X_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 669px;
+  }
+
+  .container .box {
+    width: 504px;
+    transform: rotate(-15deg);
+    margin: 0 0 623px 0;
+  }
+  .container .box .title h1 {
+    font-size: 64px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 400px) and (orientation: portrait) {
+  body,
+  html {
+           /* background-color: rgb(255, 0, 0); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPhone_6_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 36px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 669px;
+  }
+
+  .container .box {
+    width: 504px;
+    transform: rotate(-15deg);
+    margin: 0 0 516px 0;
+  }
+  .container .box .title h1 {
+    font-size: 64px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 450px) and (orientation: portrait) {
+  body,
+  html {
+           /* background-color: rgb(255, 0, 0); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPadPro_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1004px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 48px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 790px;
+  }
+
+  .container .box {
+    width: 622px;
+    transform: rotate(-17deg);
+    margin: 0 0 881px 0;
+  }
+  .container .box .title h1 {
+    font-size: 87px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
+  body,
+  html {
+           /* background-color: rgb(255, 0, 0); */
+    overflow: hidden;
+
+    background: #7ab9ff;
+    background: -webkit-linear-gradient(#7ab9ff, #a1ceff);
+    background: -o-linear-gradient(#7ab9ff, #a1ceff);
+    background: -moz-linear-gradient(#7ab9ff, #a1ceff);
+    background: linear-gradient(#7ab9ff, #a1ceff);
+  }
+  .bg {
+    background: url("../img/iPadPro_p.png") no-repeat center center fixed;
+    background-size: contain;
+    width: 100%;
+    height: 1341px;
+  }
+  .container-start {
+    width: 100%;
+    height: 35vh;
+    margin-top: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+    margin-bottom: -97px;
+    margin-left: -35px;
+  }
+  .btn-start {
+    width: 147%;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 60px;
+    border-radius: 19px;
+    box-shadow: 5px 5px 2px #ffffff;
+    border: 1px solid #ffffff;
+    margin-top: 1103px;
+  }
+
+  .container .box {
+    width: 840px;
+    transform: rotate(-17deg);
+    margin: 0 0 1207px 0;
+  }
+  .container .box .title h1 {
+    font-size: 120px;
+  }
+  .container .box .title .block {
+    height: 100px;
+  }
+  .container .box .role {
+    height: 30px;
+    margin-top: 26px;
+    margin-bottom: 72px;
+  }
+  .container .box .role p {
+    font-size: 32px;
+  }
+}

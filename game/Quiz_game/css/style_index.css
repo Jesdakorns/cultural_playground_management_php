@@ -1,0 +1,44 @@
+@font-face {
+  font-family: can_Jaew;
+  src: url(../font/can_Jaew.ttf);
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Itim", cursive;
+  background: linear-gradient(rgb(92, 97, 255), #a477ff) no-repeat center center
+    fixed;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header {
+  text-align: center;
+  margin-bottom: 5pt;
+}
+.header h1 {
+  color: #ffffff;
+  font-size: 52pt;
+}
+
+.section {
+  text-align: center;
+}
+.section button {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  color: #6a6fff;
+  padding: 5pt;
+  border: 1pt solid #3f31ff;
+  border-radius: 14pt;
+  font-size: 1.5rem;
+}
+.modal-content {
+  border: 5px solid rgb(98, 76, 210);
+  border-radius: 14px;
+}
