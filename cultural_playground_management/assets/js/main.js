@@ -520,8 +520,8 @@ function showDataset(e) {
             success: function (result, textStatus, jqXHR) {
                 var data = JSON.parse(result);
                 console.log(data.dataset_url);
-                cut_url = data.dataset_url.replace("https://navanurak.in.th/cultural_playground_management/", "");
-                // cut_url = data.dataset_url.replace("http://localhost/cultural_playground_management_php/cultural_playground_management/", "");
+//                 cut_url = data.dataset_url.replace("https://navanurak.in.th/cultural_playground_management/", "");
+                cut_url = data.dataset_url.replace("http://localhost/cultural_playground_management/", "");
                 console.log(cut_url);
 
                 $.getJSON(`../../${cut_url}`, function (data) {
