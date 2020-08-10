@@ -9,11 +9,11 @@
 ![alt text](https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(128).png?raw=true)
 <b>1.Matching Game</b> <br>
 <img src="https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(1).jpg" width="350" alt="accessibility text">
-<b>1.Puzzle Game</b>
-![alt text](https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(2).jpg?raw=true)
-<b>1.Quiz Game</b>
-![alt text](https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(3).jpg?raw=true)
-<b>1.Mole Game</b>
-![alt text](https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(4).jpg?raw=true)
-<b>1.Cosmos Game</b>
-![alt text](https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(5).jpg?raw=true)
+<b>1.Puzzle Game</b><br>
+<img src="https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(2).jpg" width="350" alt="accessibility text">
+<b>1.Quiz Game</b><br>
+<img src="https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(3).jpg" width="350" alt="accessibility text">
+<b>1.Mole Game</b><br>
+<img src="https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(4).jpg" width="350" alt="accessibility text">
+<b>1.Cosmos Game</b><br>
+<img src="https://github.com/Jesdakorns/cultural_playground_management_php/blob/master/illustration/Screenshot%20(5).jpg" width="350" alt="accessibility text">
